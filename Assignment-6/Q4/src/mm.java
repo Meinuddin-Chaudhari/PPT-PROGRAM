@@ -1,30 +1,21 @@
 
-//	public static void main (String[] args) {  
-//
-//
-//}  	
-class mm{
-public static String func(int arr[] , int st, int en)
-    {
-          if( st == en ){
+public class mm {
 
-              System.out.print( arr[ st ] );
-
-              return;
-          }
-     
-        int mid = (st+en)/2;
-
-        System.out.print( arr[mid] );
-
-        func(arr, st, mid - 1 );
-
-        func( arr, mid + 1, en );
-     
-    }	
-
-public static void main (String[] args) {  
-
-
-}  	
+    public int findMaxLength(int[] nums) {
+        int maxlen = 0;
+        for (int start = 0; start < nums.length; start++) {
+            int zeroes = 0, ones = 0;
+            for (int end = start; end < nums.length; end++) {
+                if (nums[end] == 0) {
+                    zeroes++;
+                } else {
+                    ones++;
+                }
+                if (zeroes == ones) {
+                    maxlen = Math.max(maxlen, end - start + 1);
+                }
+            }
+        }
+        return maxlen;
+    }
 }
