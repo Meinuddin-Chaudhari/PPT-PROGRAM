@@ -1,0 +1,59 @@
+Q1)
+The equations x = 2 and y = 4 represent vertical lines that intersect at the point (2, 4).
+
+The equation x = 2 represents a vertical line passing through the x-coordinate 2. It means that for any value of y, the x-coordinate is always 2. So, all the points on this line have an x-coordinate of 2.
+
+Similarly, the equation y = 4 represents a horizontal line passing through the y-coordinate 4. For any value of x, the y-coordinate is always 4. Therefore, all the points on this line have a y-coordinate of 4.
+
+Since both lines have the same x and y coordinates, they intersect at the point (2, 4).
+
+
+
+
+Q2)
+To determine the number of solutions for the system of equations 2X + 3Y = 9 and 7X + 9Y = -6, we can analyze the coefficients of X and Y and compare the equations.
+
+One approach is to use the determinant of the coefficient matrix to determine the type of solution. The determinant can be calculated as follows:
+
+D = (2 * 9) - (3 * 7) = 18 - 21 = -3.
+
+If the determinant (D) is not equal to zero, the system has a unique solution. If D is equal to zero, we need to further analyze the equations to determine the solution type.
+
+In this case, D = -3, which means the system has a unique solution (a unique point of intersection) because the determinant is not zero.
+
+Therefore, the system of equations 2X + 3Y = 9 and 7X + 9Y = -6 has a unique solution.
+
+
+
+
+Q3)
+The equation 7x + 9y = -5 represents a linear equation in two variables, x and y. However, your question about "keys" seems unclear. If you meant "solutions" or "roots," I can help you determine the number of solutions.
+
+To determine the number of solutions for this equation, we need more information or another equation. A single equation in two variables can have an infinite number of solutions or no solution at all, depending on the relationship between the coefficients and constants.
+
+If you provide another equation or additional information, I can assist you further in determining the number of solutions.
+
+
+Q4)
+For the equation ax^2 + bx + c = 0, if a = b = c = 0, the equation becomes 0x^2 + 0x + 0 = 0.
+
+In this case, the equation simplifies to 0 = 0. This means that every value of x satisfies the equation.
+
+Therefore, when a = b = c = 0, the equation ax^2 + bx + c = 0 is true for all values of x. It has infinite solutions.
+
+
+Q5)
+Let's assume the income of person A is 2x, and the income of person B is 3x. According to the given information, B's income is Rs 3000, so we can set up the equation:
+
+3x = 3000
+
+Solving for x, we find x = 1000. Therefore, A's income is 2x = 2 * 1000 = Rs 2000.
+
+Now, let's consider their savings. A's savings are given as Rs 500, and B's savings are given as Rs 700.
+
+To find their expenditures, we subtract the savings from their respective incomes:
+
+A's expenditure = A's income - A's savings = Rs 2000 - Rs 500 = Rs 1500
+B's expenditure = B's income - B's savings = Rs 3000 - Rs 700 = Rs 2300
+
+Therefore, the ratio of their expenditures is 1500:2300, which can be simplified to 15:23.
