@@ -1,0 +1,217 @@
+Q1. What are the Conditional Operators in Java?
+here are three types of the conditional operator in Java:
+Conditional AND
+Conditional OR
+Ternary Operator
+
+Conditional AND : The operator is applied between two Boolean expressions. It is denoted by the two AND operators (&&). 
+It returns true if and only if both expressions are true, else returns false.
+
+Conditional OR
+The operator is applied between two Boolean expressions. It is denoted by the two OR operator (||).
+ It returns true if any of the expression is true, else returns false.
+
+Ternary Operator
+The meaning of ternary is composed of three parts. The ternary operator (? :) consists of three operands. It is used to evaluate Boolean expressions. The operator decides which value will be assigned to the variable. It is the only conditional operator that accepts three operands. 
+It can be used instead of the if-else statement. It makes the code much more easy, readable, and shorter.
+
+
+
+
+
+Q2. What are the types of operators based on the number of operands?
+Operators in Java can be classified into 5 types:
+Arithmetic Operators
+Assignment Operators
+Relational Operators
+Logical Operators
+Unary Operators
+Bitwise Operators
+
+1. Java Arithmetic Operators
+Arithmetic operators are used to perform arithmetic operations on variables and data.
+
+2. Java Assignment Operators
+Assignment operators are used in Java to assign values to variables
+
+3. Java Relational Operators
+Relational operators are used to check the relationship between two operands
+
+4. Java Logical Operators
+Logical operators are used to check whether an expression is true or false. They are used in decision making.
+
+5. Java Unary Operators
+Unary operators are used with only one operand. For example, ++ is a unary operator that increases the value of a variable by 1. That is, ++5 will return 6.
+
+6. Java Bitwise Operators
+Bitwise operators in Java are used to perform operations on individual bits.
+
+
+
+
+Q3.What is the use of Switch case in Java programming?
+
+there can be one or N number of case values for a switch expression.
+The case value must be of switch expression type only. The case value must be literal or constant. It doesn't allow variables.
+The case values must be unique. In case of duplicate value, it renders compile-time error.
+The Java switch expression must be of byte, short, int, long (with its Wrapper type), enums and string.
+Each case statement can have a break statement which is optional. When control reaches to the break statement,
+ it jumps the control after the switch expression. If a break statement is not found, it executes the next case.
+The case value can have a default label which is optional.
+
+
+
+
+Q4.What are the conditional Statements and use of conditional statements in Java?
+Conditional Statements come under Control Structures in Java. As the same suggests, it controls the flow of the execution of the program.
+ Controlling here means branching, decision-making 
+Conditional Statements or Decisional Statements (if, if-else, switch)
+Following are the statements covered under conditional statements in Java:
+
+If statement
+If else statement
+Switch Statement
+
+If Statement
+If a statement executes a set of statements based upon certain conditions. The condition statement follows the if keyword.
+
+If-Else Statement
+If-Else statement is a control structure that selects or chooses a set of statements depending upon certain conditions. 
+If statements are like a subset of if-else statements.
+
+Switch Statement
+Unlike the if-else statement, the switch has multiple paths of execution. Moreover,
+ it evaluates the expression based on some of the primitive types or class types and matches their value with its cases.
+A switch can work well with a byte, char, short, and int primitive data types.
+
+
+
+
+Q5.What is the syntax of if else statement?
+If-Else statement is a control structure that selects or chooses a set of statements depending upon certain conditions.
+Syntax:
+
+if (condition)
+{
+//Statements to be executed if condition satisfies
+}
+else
+{
+//Statements to be executed if the condition is not satisfied
+}
+Working of if-else statements:
+
+Here, the if clause evaluates the expression. If it comes out as true, statements under if block gets executed. Else, 
+statements under the else block get executed. As you can observe here, depending upon the condition some sets of statements are executed
+ and some are bypassed. 
+
+
+
+
+
+Q6.How do you compare two strings in Java?
+It is used in authentication (by equals() method), sorting (by compareTo() method), reference matching (by == operator) etc.
+There are three ways to compare String in Java:
+
+By Using equals() Method
+By Using == Operator
+By compareTo() Method
+
+1) By Using equals() Method
+The String class equals() method compares the original content of the string. It compares values of string for equality.
+ String class provides the following two methods:
+
+2) By Using == operator
+The == operator compares references not values
+
+3) By Using compareTo() method
+The String class compareTo() method compares values lexicographically and returns an integer value that describes
+ if first string is less than, equal to or greater than second string.
+
+
+
+
+
+Q7.What is Mutable String in Java Explain with an example
+Immutable means unchanging over time or unable to be changed. Whenever we create a string object of the String class,
+ it is by default created immutable in nature. If we change the value of the string, the JVM creates a new object.
+Mutable means changing over time or that can be changed. In a mutable string, we can change the value of the string and JVM doesn’t create a new object.
+ In a mutable string, we can change the value of the string in the same object.
+To create a mutable string in java, Java has two classes StringBuffer and StringBuilder where the String class is used for the immutable string.
+public class MutableString
+{
+    public static void main (String[] args)
+    {
+        StringBuffer str1 = new StringBuffer("JavaGoal");
+        StringBuilder str2 = new StringBuilder("Learning");
+        
+        System.out.println("Value of str1 before change :" + str1);
+        System.out.println("Value of str2 before change :" + str2);
+        
+        str1.append(".com");
+        str2.append(" website");
+        
+        System.out.println("Value of str1 after change :" + str1);
+        System.out.println("Value of str2 after change :" + str2);
+    }
+}
+
+
+
+
+Q8.Write a program to sort a String Alphabetically
+import java.util.Arrays;
+public class StringSorter {
+    public static void main(String[] args) {
+        String input = "openAI";
+        String sortedString = sortStringAlphabetically(input);
+        System.out.println("Original string: " + input);
+        System.out.println("Sorted string: " + sortedString);
+    }
+
+    public static String sortStringAlphabetically(String input) {
+        // Convert the string to character array
+        char[] charArray = input.toCharArray();
+
+        // Sort the character array
+        Arrays.sort(charArray);
+
+        // Convert the character array back to string
+        return new String(charArray);
+    }
+}
+
+
+
+
+
+Q9.Write a program to check if the letter 'e' is present in the word'Umbrella'.
+public class LetterChecker {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean isPresent = checkLetterPresence(word, 'e');
+        System.out.println("The letter 'e' is present in the word '" + word + "': " + isPresent);
+    }
+
+    public static boolean checkLetterPresence(String word, char letter) {
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == letter) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+
+
+
+
+
+Q10.Where exactly is the string constant pool located in the memory?
+Heap memory
+String constant pool belongs to the permanent generation area of Heap memory.
+
+
+
+
