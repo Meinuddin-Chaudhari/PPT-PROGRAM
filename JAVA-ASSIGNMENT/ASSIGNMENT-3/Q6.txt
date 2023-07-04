@@ -1,0 +1,20 @@
+
+
+
+
+Q6. What is the benefit of encapsulation in java?
+
+
+Data Hiding: Encapsulation allows for the hiding of the internal state (data) of an object from outside access. By using access modifiers such as private,
+ you can restrict direct access to the internal data of a class. This prevents unauthorized external code from manipulating or corrupting the data, ensuring data integrity and security.
+
+Access Control: Encapsulation enables fine-grained control over the access to the internal members of a class. By using access modifiers such as private,
+ protected, and public, you can specify which members are accessible to other classes and which are not. This ensures that the class's internal implementation details
+ are hidden and can only be accessed through well-defined interfaces (methods).
+
+Code Flexibility and Maintenance: Encapsulation provides a way to change the internal implementation of a class without affecting the code that uses the class.
+ By encapsulating data and providing public methods to access and modify that data, you can modify the internal implementation without affecting the external code that depends on the class.
+ This promotes flexibility, as you can update or enhance the class's internals without impacting the overall system.
+
+Code Reusability: Encapsulation supports code reusability by allowing objects to be used as modular building blocks. Encapsulated objects can be easily reused
+ in different parts of the code or in different projects. By providing a well-defined interface (public methods), encapsulated objects can be integrated seamlessly into other code modules, promoting modular and reusable code.

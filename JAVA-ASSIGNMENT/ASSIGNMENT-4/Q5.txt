@@ -1,0 +1,13 @@
+Q5.What is the use of interface in Java?
+
+Interfaces in Java have several important uses. Here are some key purposes and benefits of using interfaces:
+
+Abstraction and Polymorphism: Interfaces allow you to define a contract or a set of methods that classes must implement. This promotes abstraction by separating the declaration of methods from their implementation. Interfaces enable polymorphism, where different classes can implement the same interface, allowing them to be used interchangeably through the interface type.
+
+Multiple Inheritance of Behavior: Unlike classes, which can only inherit from a single superclass, Java interfaces support multiple inheritance. This means a class can implement multiple interfaces, inheriting and using the behavior defined in each interface.
+
+Contract Specification: Interfaces serve as a contract between the interface and the implementing classes. They define the methods that must be implemented, their return types, and parameter lists. This helps ensure that classes implementing the interface adhere to a certain behavior or functionality.
+
+Loose Coupling: Interfaces promote loose coupling between components of a system. By programming to interfaces rather than concrete implementations, you can design systems where components are decoupled and can be replaced or extended more easily. This improves modularity and flexibility in software design.
+
+Code Reusability: Interfaces enable code reuse by allowing different classes to implement the same interface and provide their own implementation. This facilitates the creation of interchangeable components and promotes modular design.

@@ -1,0 +1,32 @@
+Q10.Is it mandatory for a lambda expression to have parameters?
+
+No, it is not mandatory for a lambda expression to have parameters in Java. The presence or absence of parameters in a lambda expression depends on the functional interface it is being used with and the desired behavior.
+
+Here are a few scenarios related to lambda expressions and parameters:
+
+Lambda Expression with No Parameters:
+If the functional interface has no parameters in its abstract method, you can use a lambda expression with no parameters. For example:
+java
+Copy code
+Runnable runnable = () -> {
+    System.out.println("Hello, World!");
+};
+In this example, the Runnable functional interface represents a task that takes no arguments and returns no result. The lambda expression () -> { ... } represents the implementation of the run() method with no parameters.
+
+Lambda Expression with Single Parameter:
+If the functional interface has a single parameter in its abstract method, you can use a lambda expression with a single parameter. For example:
+java
+Copy code
+Consumer<String> consumer = (str) -> {
+    System.out.println(str);
+};
+In this example, the Consumer functional interface represents an operation that takes a single argument and performs some action on it. The lambda expression (str) -> { ... } represents the implementation of the accept() method with a single parameter.
+
+Lambda Expression with Multiple Parameters:
+If the functional interface has multiple parameters in its abstract method, you can use a lambda expression with multiple parameters. For example:
+java
+Copy code
+Calculator calculator = (a, b) -> {
+    return a + b;
+};
+In this example, the 

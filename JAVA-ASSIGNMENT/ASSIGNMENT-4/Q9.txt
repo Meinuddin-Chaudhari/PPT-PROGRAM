@@ -1,0 +1,12 @@
+Q9.What is the benefit of lambda expressions in Java 8?
+
+
+Lambda expressions introduced in Java 8 provide several benefits that enhance the expressiveness and flexibility of the language. Here are some key benefits of using lambda expressions:
+
+Concise Syntax: Lambda expressions allow you to write more concise code by reducing the verbosity compared to anonymous inner classes. They provide a compact syntax for representing behavior in a more readable and expressive manner.
+
+Functional Programming: Lambda expressions enable functional programming paradigms in Java. They allow you to treat behavior as a first-class citizen by representing it as an object. This promotes writing code in a more declarative and functional style.
+
+Enhanced Readability: By using lambda expressions, you can inline the implementation of a single abstract method, making the code more readable and eliminating the need for separate methods or classes for small behaviors.
+
+Code Reusability: Lambda expressions enable code reuse by allowing you to pass behavior as arguments to methods or store them in variables. This promotes modular design and eliminates the need for writing boilerplate code for small functionalities.

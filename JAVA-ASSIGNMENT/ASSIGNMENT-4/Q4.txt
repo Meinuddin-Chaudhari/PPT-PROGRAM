@@ -1,0 +1,20 @@
+Q4.What is an interface in Java?
+
+
+In Java, an interface is a reference type that defines a contract for the behavior that a class must implement. It acts as a blueprint for classes and specifies a set of methods that the implementing classes must define. An interface can also contain constant variables.
+
+Here are some key points about interfaces in Java:
+
+Declaration: An interface is declared using the interface keyword followed by the interface name. For example: interface MyInterface.
+
+Method Signatures: Interfaces can declare method signatures without providing an implementation. By default, all methods in an interface are public and abstract.
+
+Implementation: Classes that implement an interface must provide an implementation for all the methods defined in the interface.
+
+Multiple Inheritance: Java allows a class to implement multiple interfaces, providing a form of multiple inheritance for behavior. This allows a class to inherit and use the methods of multiple interfaces.
+
+Interface Inheritance: An interface can extend other interfaces using the extends keyword. This allows the derived interface to inherit the methods and constants from the parent interfaces.
+
+Default and Static Methods: Starting from Java 8, interfaces can also have default and static methods. Default methods provide a default implementation for methods in the interface, while static methods are common utility methods that can be called on the interface itself.
+
+Constants: Interfaces can also declare constant variables, which are implicitly public, static, and final. These constants can be accessed using the interface name.

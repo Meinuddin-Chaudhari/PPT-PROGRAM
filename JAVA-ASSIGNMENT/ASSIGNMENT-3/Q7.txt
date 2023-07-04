@@ -1,0 +1,21 @@
+
+Q7.Is java a t 100% Object oriented Programming language? If no why ?
+
+No, Java is not considered a 100% pure object-oriented programming language. While Java is primarily object-oriented,
+ it also incorporates some non-object-oriented elements and features. Here are a few reasons why Java is not considered 100% pure object-oriented:
+
+Primitive Data Types: Java includes primitive data types such as int, double, boolean, etc., which are not objects.
+ These primitive types do not have associated methods or behaviors like objects do. However, Java provides wrapper classes (Integer, Double, Boolean, etc.)
+ to treat these primitive types as objects when necessary.
+
+Static Members and Methods: Java allows the use of static members (variables and methods) that are associated with a class rather than an instance of an object.
+ Static members are shared among all instances of the class and can be accessed without creating an object. This contradicts the principle of encapsulation and instance-specific behavior that is central to pure object-oriented programming.
+
+Procedural Programming Elements: Java supports procedural programming elements such as control structures (if-else, loops), functions (methods outside of classes), 
+and modular programming with packages. These elements are not inherently object-oriented and allow for procedural-style programming.
+
+Main Method: In Java, the entry point of a program is the main method, which is a static method. It is called without creating an object and is not associated with
+ any class instance. This highlights the inclusion of non-object-oriented programming constructs.
+
+Inheritance Limitations: Java supports single inheritance, where a class can inherit from only one superclass. Pure object-oriented languages, such as Smalltalk, 
+support multiple inheritance, allowing a class to inherit from multiple superclasses. Although Java introduced interfaces to achieve some level of multiple inheritance, it is not the same as direct inheritance from multiple classes.

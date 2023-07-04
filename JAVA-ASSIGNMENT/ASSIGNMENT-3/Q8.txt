@@ -1,0 +1,21 @@
+
+
+
+Q8.What are the advantages of abstraction in java?
+
+
+Simplifies Complexity: Abstraction allows you to represent complex real-world entities as simplified models in code. 
+It focuses on the essential characteristics and behavior of an object while hiding unnecessary details. By abstracting away the complexity,
+ you can create more manageable and understandable code.
+
+Hides Implementation Details: Abstraction enables the separation of the external interface (what the object does) from its internal implementation (how it does it).
+ It hides the implementation details, exposing only the necessary methods and properties to interact with the object. 
+This promotes information hiding and encapsulation, which enhances code security and prevents unauthorized access to internal data or behavior.
+
+Enhances Code Reusability: Abstraction supports code reusability by creating abstract classes and interfaces. Abstract classes provide a blueprint for subclasses to i
+nherit and extend, allowing for code reuse across related classes. Interfaces define common behavior that can be implemented by multiple unrelated classes. 
+By utilizing abstraction, you can develop modular and reusable code, reducing redundancy and promoting code efficiency.
+
+Promotes Modularity and Maintainability: Abstraction helps in creating modular and maintainable code. It allows you to divide a complex system into smaller,
+ manageable components represented by classes and interfaces. Each component focuses on a specific responsibility or functionality, making the code more organized and easier to maintain.
+ Changes or updates to a specific component have minimal impact on other parts of the system, enhancing code maintainability.

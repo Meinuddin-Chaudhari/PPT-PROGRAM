@@ -1,0 +1,18 @@
+Q6.What is the lambda expression of Java 8?
+
+In Java 8, lambda expressions were introduced as a new feature to facilitate functional programming and simplify the syntax of writing certain types of methods. A lambda expression is an anonymous function that can be treated as a method argument or stored in a variable.
+
+Lambda expressions in Java 8 have the following syntax:
+
+css
+Copy code
+(parameter1, parameter2, ...) -> { body }
+Here's a breakdown of the components:
+
+Parameters: The parameters are optional. If there are no parameters, you can use an empty set of parentheses. If there is a single parameter, you can omit the parentheses. For multiple parameters, separate them with commas.
+
+Arrow Operator: The arrow operator -> separates the parameters from the body of the lambda expression.
+
+Body: The body of the lambda expression can be a single statement or a block of code enclosed in curly braces. If it's a single statement, you can omit the braces.
+
+Lambda expressions are primarily used to provide a concise way to define implementations of functional interfaces. A functional interface is an interface with a single abstract method. Instead of implementing the method in a separate class, you can use a lambda expression to define the method's behavior inline.

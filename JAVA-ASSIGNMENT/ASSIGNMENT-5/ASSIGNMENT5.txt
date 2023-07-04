@@ -1,0 +1,140 @@
+Q1.What is Exception in Java?**
+In Java, an exception is an event that occurs during the execution of a program and disrupts the normal flow of instructions. It represents an error or an exceptional condition that may occur while a program is running. When an exceptional situation occurs, the program creates an object known as an exception, which contains information about the error.
+
+Exceptions in Java are objects that are derived from the Throwable class. They can be either checked or unchecked. Checked exceptions are those that the compiler forces you to handle explicitly in your code, either by catching them or declaring them to be thrown. Examples of checked exceptions include IOException and SQLException. On the other hand, unchecked exceptions are not required to be caught or declared, and they usually indicate programming errors or unexpected conditions. Examples of unchecked exceptions include NullPointerException and ArrayIndexOutOfBoundsException.
+
+
+
+Q2.What is Exception Handling?**
+Exception handling in Java refers to the mechanism that allows you to catch and handle exceptions in a program. It provides a way to deal with exceptional situations and prevent the program from terminating abruptly.
+
+Exception handling involves three main components: try, catch, and finally.
+
+try: The try block encloses the code that might throw an exception. It is followed by one or more catch blocks or a finally block.
+
+catch: The catch block is used to catch and handle specific exceptions that may occur within the try block. Each catch block specifies the type of exception it can handle, and if an exception of that type occurs, the corresponding catch block is executed.
+
+finally: The finally block is optional and follows the catch block(s). It contains code that will be executed regardless of whether an exception occurred or not. The finally block is typically used to release resources or perform cleanup tasks that need to be executed regardless of exceptions.
+
+
+
+
+*Q3.What is the difference between Checked and Unchecked Exceptions and Error?**
+In Java, exceptions are categorized into three main types: checked exceptions, unchecked exceptions, and errors. Here's a breakdown of the differences between them:
+
+Checked Exceptions: Checked exceptions are exceptions that the compiler requires you to handle explicitly in your code. If a method can potentially throw a checked exception, you must either catch the exception or declare it to be thrown in the method signature using the throws keyword. Examples of checked exceptions include IOException, SQLException, and ClassNotFoundException. The purpose of checked exceptions is to enforce proper exception handling and to ensure that potential errors are handled by the calling code.
+
+Unchecked Exceptions: Unchecked exceptions, also known as runtime exceptions, are exceptions that are not checked by the compiler. They are typically caused by programming errors, such as accessing a null object (NullPointerException), dividing by zero (ArithmeticException), or accessing an array out of bounds (ArrayIndexOutOfBoundsException). Unchecked exceptions do not need to be caught or declared explicitly. They can be handled optionally, but if left unhandled, they will propagate up the call stack until caught or result in program termination. Unchecked exceptions are often caused by mistakes in the code logic or incorrect usage of APIs.
+
+
+
+Q4.What are the difference between throw and throws in Java?**
+In Java, throw and throws are keywords used in exception handling, but they have different purposes and usage:
+
+throw:
+The throw keyword is used to explicitly throw an exception in a program. It is followed by an instance of an exception class or a subclass of Throwable. When you encounter an exceptional condition or an error during program execution, you can use throw to create an exception object and throw it. This transfers the control to the nearest enclosing try-catch block or terminates the program if the exception is not caught. The throw statement is typically used within methods to indicate exceptional conditions.
+Here's an example of using throw to throw a custom exception:
+
+java
+Copy code
+public void divide(int dividend, int divisor) {
+    if (divisor == 0) {
+        throw new ArithmeticException("Division by zero is not allowed");
+    }
+    // Perform the division
+}
+
+
+
+Q5.What is multithreading in Java? mention its advantages**
+Multithreading in Java refers to the ability of a program to execute multiple threads concurrently within a single process. A thread is an independent unit of execution that represents a separate flow of control. Multithreading allows different parts of a program to run concurrently, performing multiple tasks simultaneously.
+
+Advantages of multithreading in Java include:
+
+Concurrency: Multithreading enables concurrent execution of multiple tasks, allowing a program to make better use of available system resources. It allows different parts of a program to execute simultaneously, improving overall performance and responsiveness.
+
+Parallelism: By utilizing multiple threads, multithreading enables parallel execution of tasks on multi-core or multi-processor systems. This can significantly speed up the execution of computationally intensive or time-consuming operations.
+
+Responsiveness: Multithreading can improve the responsiveness of applications, particularly in user interfaces or interactive systems. By delegating time-consuming tasks to background threads, the main thread can remain responsive and provide a better user experience.
+
+Asynchronous Operations: Multithreading enables asynchronous operations, where tasks can run independently without blocking the main thread. This is particularly useful in scenarios such as network communication or I/O operations, where waiting for completion would waste valuable time.
+
+Background Processing: Multithreading allows background processing of tasks while the main thread continues with other operations. This is beneficial for long-running or non-interactive tasks that can be performed in the background without affecting the main program flow.
+
+
+
+Q6.Write a program to create and call a custom exception**
+// Custom exception class
+class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
+// Example class that throws the custom exception
+class Example {
+    public void performOperation() throws CustomException {
+        // Some condition that triggers the exception
+        boolean condition = true;
+
+        if (condition) {
+            throw new CustomException("Custom Exception occurred");
+        } else {
+            // Perform the operation
+            System.out.println("Operation executed successfully");
+        }
+    }
+}
+
+// Main program to call the custom exception
+public class CustomExceptionExample {
+    public static void main(String[] args) {
+        Example example = new Example();
+
+        try {
+            example.performOperation();
+        } catch (CustomException e) {
+            System.out.println("Caught CustomException: " + e.getMessage());
+        }
+    }
+}
+
+
+
+Q7.How can you handle exceptions in Java?**
+In Java, you can handle exceptions using the try-catch-finally mechanism. Here's how you can handle exceptions:
+
+try block: The code that might throw an exception is enclosed within a try block. It is followed by one or more catch blocks or a finally block. The try block should contain the code where an exception is likely to occur.
+
+catch block: A catch block is used to catch and handle specific exceptions that may occur within the try block. It specifies the type of exception it can handle, denoted by the exception class name. If an exception of the specified type occurs, the corresponding catch block is executed. You can have multiple catch blocks to handle different types of exceptions. The catch block is optional, but you must have at least one catch block or a finally block.
+
+finally block: The finally block is optional and follows the catch block(s). It is used to specify code that will be executed regardless of whether an exception occurred or not. The finally block is typically used for cleanup tasks or releasing resources. It is guaranteed to be executed, even if an exception is thrown, and it will be the last code to run before exiting the try-catch-finally block.
+
+
+
+
+Q8.What is Thread in Java?**
+In Java, a thread is a lightweight unit of execution that represents an independent path of execution within a program. A thread allows a program to perform multiple tasks concurrently, enabling different parts of the program to execute simultaneously.
+
+A thread can be thought of as a separate flow of control that runs within a single process. Each thread has its own stack and program counter, which allows it to execute instructions independently of other threads. Threads share the same memory space, enabling them to access and modify shared data within a program.
+
+Java provides built-in support for multithreading through the java.lang.Thread class. You can create threads by extending the Thread class or implementing the Runnable interface and passing it to a Thread object.
+
+
+
+
+
+Q9. What are the two ways of implementing thread in Java?**
+
+In Java, there are two main ways to implement threads:
+
+Extending the Thread class: The first way to implement a thread is by creating a subclass of the Thread class and overriding its run() method. The run() method contains the code that will be executed when the thread is started. By extending the Thread class, you directly inherit the functionality provided by the class, but it limits your ability to extend any other class since Java doesn't support multiple inheritance.
+
+Implementing the Runnable interface: The second way to implement a thread is by implementing the Runnable interface. This approach is preferred because it offers more flexibility, as you can implement other interfaces or extend other classes as needed. By implementing Runnable, you separate the task of the thread from the thread itself.
+
+
+
+Q10.What do you mean by garbage collection?**
+Garbage collection is a mechanism in Java (and some other programming languages) that automatically manages memory by reclaiming objects that are no longer needed. It is responsible for identifying and freeing up memory occupied by objects that are no longer referenced or reachable by the program. Garbage collection helps prevent memory leaks and eliminates the need for manual memory management.
+
+In Java, when an object is created using the new keyword, memory is allocated to store that object. Over time, as the program executes, objects may become unreachable or no longer needed, such as when they go out of scope or when references to them are no longer present. These objects occupy memory that can no longer be accessed or utilized by the program, resulting in wasted resources.
